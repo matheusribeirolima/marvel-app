@@ -1,0 +1,28 @@
+name: Pull Request & Master CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  pr-verification:
+    name: Project Checks
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Cache gradle dependencies
+        uses: actions/cache@v2
+        env:
+          gradle-cache-key: gradle-cache-android
+          gradle-path: ~/.gradle
+        with:
+          path: ${{ env.gradle-path }}
+          key: ${{ runner.os }}-build-${{ env.gradle-cache-key }}-${{ hashFiles('android/buildSrc/**') }}
+          restore-keys: ${{ runner.os }}-build-${{ env.gradle-cache-key }}
+      - name: Run checks
+        run: bash ./gradlew project_check

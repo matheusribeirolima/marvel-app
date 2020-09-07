@@ -1,0 +1,8 @@
+task project_check {
+    dependsOn "clean"
+    dependsOn "detekt"
+    dependsOn "lintDebug"
+    dependsOn "testDebugUnitTest --stacktrace"
+    dependsOn "assembleDebug"
+    dependsOn "assembleDebugAndroidTest"
+}

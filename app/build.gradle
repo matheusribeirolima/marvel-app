@@ -1,0 +1,96 @@
+import com.marvel.app.Dependencies
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'androidx.navigation.safeargs'
+
+def apiKeyPropertiesFile = rootProject.file("apikey.properties")
+def apiKeyProperties = new Properties()
+apiKeyProperties.load(new FileInputStream(apiKeyPropertiesFile))
+
+android {
+    compileSdkVersion Dependencies.Versions.compileSdk
+    buildToolsVersion Dependencies.Versions.buildTools
+
+    defaultConfig {
+        applicationId Dependencies.Application.id
+        minSdkVersion Dependencies.Versions.minSdk
+        targetSdkVersion Dependencies.Versions.targetSdk
+        versionCode Dependencies.Releases.versionCode
+        versionName Dependencies.Releases.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "API_KEY", apiKeyProperties['API_KEY']
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+kapt {
+    correctErrorTypes true
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation Dependencies.AndroidxLibraries.core
+    implementation Dependencies.AndroidxLibraries.appCompat
+    implementation Dependencies.AndroidxLibraries.constraintLayout
+    implementation Dependencies.AndroidxLibraries.recyclerView
+    implementation Dependencies.AndroidxLibraries.viewModel
+    implementation Dependencies.AndroidxLibraries.liveData
+    implementation Dependencies.AndroidxLibraries.hiltX
+    kapt Dependencies.AndroidxLibraries.hiltXCompiler
+    implementation Dependencies.AndroidxLibraries.navigationFragment
+    implementation Dependencies.AndroidxLibraries.navigationUi
+    implementation Dependencies.AndroidxLibraries.paging
+
+    implementation Dependencies.GoogleLibraries.materialDesign
+    implementation Dependencies.GoogleLibraries.hilt
+    kapt Dependencies.GoogleLibraries.hiltCompiler
+
+    implementation Dependencies.GeneralLibraries.kotlin
+    implementation Dependencies.GeneralLibraries.coroutinesCore
+    implementation Dependencies.GeneralLibraries.coroutinesAndroid
+    implementation Dependencies.GeneralLibraries.coil
+    implementation Dependencies.GeneralLibraries.retrofit
+    implementation Dependencies.GeneralLibraries.retrofitGson
+    implementation Dependencies.GeneralLibraries.loggingInterceptor
+
+    testImplementation Dependencies.TestLibraries.junit
+    testImplementation Dependencies.TestLibraries.archCoreTesting
+    testImplementation Dependencies.TestLibraries.paging
+    testImplementation Dependencies.TestLibraries.hilt
+    kaptTest Dependencies.TestLibraries.hiltCompiler
+    testImplementation Dependencies.TestLibraries.coroutines
+    testImplementation Dependencies.TestLibraries.testRules
+
+    androidTestImplementation Dependencies.TestLibraries.testExt
+    androidTestImplementation Dependencies.TestLibraries.espresso
+    androidTestImplementation Dependencies.TestLibraries.navigation
+    androidTestImplementation Dependencies.TestLibraries.hilt
+    kaptAndroidTest Dependencies.TestLibraries.hiltCompiler
+}

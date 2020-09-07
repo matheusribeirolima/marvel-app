@@ -1,0 +1,14 @@
+apply plugin: 'io.gitlab.arturbosch.detekt'
+
+detekt {
+    failFast = true
+    config = files("$rootDir/config/detekt/detekt.yml")
+    reports {
+        html {
+            enabled = true
+            destination = file("$rootDir/config/detekt/report.html")
+        }
+    }
+}
+
+tasks.detekt.jvmTarget = "1.8"
