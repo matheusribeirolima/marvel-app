@@ -10,7 +10,7 @@ A simple Android project that lists and details Marvel characters.
 
 ## How to use 👣
 
-Just add the `key.properties` file to the root of the project with the `API_KEY` attribute filled ith your **Marvel API** public key.
+Just add to the `API_KEY` attribute in the `key.properties` file your **Marvel API** public key, and you're good to go!
 
 ## Features 🎨
 
@@ -45,7 +45,7 @@ Currently, the following workflow is available:
 
 ## Marvel Api 📦
 
-[Open API](􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕https://developer.marvel.com) that provides information about Marvel Comics heroes.
+![Open API](􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕https://developer.marvel.com) that provides information about Marvel Comics heroes.
 
 ## Contributing 🤝
 

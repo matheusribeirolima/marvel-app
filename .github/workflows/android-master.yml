@@ -24,5 +24,7 @@ jobs:
           path: ${{ env.gradle-path }}
           key: ${{ runner.os }}-build-${{ env.gradle-cache-key }}-${{ hashFiles('android/buildSrc/**') }}
           restore-keys: ${{ runner.os }}-build-${{ env.gradle-cache-key }}
+      - name: Applyng Api key
+        run: ./config/createKey.sh ${{ secrets.API_KEY }}
       - name: Run checks
         run: bash ./gradlew project_check
