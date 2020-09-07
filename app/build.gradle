@@ -7,7 +7,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'androidx.navigation.safeargs'
 
-def apiKeyPropertiesFile = rootProject.file("apikey.properties")
+def apiKeyPropertiesFile = rootProject.file("key.properties")
 def apiKeyProperties = new Properties()
 apiKeyProperties.load(new FileInputStream(apiKeyPropertiesFile))
 

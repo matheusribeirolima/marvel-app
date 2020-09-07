@@ -45,7 +45,7 @@ Currently, the following workflow is available:
 
 ## Marvel Api 📦
 
-[![Open API](􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕https://developer.marvel.com)] that provides information about Marvel Comics heroes.
+[Open API](􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕https://developer.marvel.com) that provides information about Marvel Comics heroes.
 
 ## Contributing 🤝
 
