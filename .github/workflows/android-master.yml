@@ -9,7 +9,7 @@ on:
       - '*'
 
 jobs:
-  pr-verification:
+  verification:
     name: Project Checks
     runs-on: macos-latest
     steps:
@@ -26,7 +26,17 @@ jobs:
           restore-keys: ${{ runner.os }}-build-${{ env.gradle-cache-key }}
       - name: Grant execute permission
         run: chmod +x ./config/createKey.sh
-      - name: Applyng Api key
+      - name: Applyng api key
         run: ./config/createKey.sh ${{ secrets.API_KEY }}
-      - name: Run checks
-        run: bash ./gradlew clean build
+      - name: Run clean generated files
+        run: ./gradlew clean
+      - name: Run static validation
+        run: ./gradlew detekt
+      - name: Run lint
+        run: ./gradlew lintDebug
+      - name: Run unit tests
+        run: ./gradlew testDebugUnitTest --stacktrace
+      - name: Assemble Debug APK
+        run: ./gradlew assembleDebug
+      - name: Assemble Debug Test APK
+        run: ./gradlew assembleDebugAndroidTest
