@@ -4,7 +4,7 @@
 
 # Marvel App
 
-![Project Checks](https://github.com/matheusribeirolima/marvel-app/workflows/.github/workflows/android-master.yml/badge.svg) ![License](https://img.shields.io/github/license/cortinico/kotlin-android-template.svg)
+![Project Checks](https://github.com/matheusribeirolima/marvel-app/workflows/Pull%20Request%20&%20Master%20CI/badge.svg) ![License](https://img.shields.io/github/license/cortinico/kotlin-android-template.svg)
 
 A simple Android project that lists and details Marvel characters.
 
@@ -45,7 +45,7 @@ Currently, the following workflow is available:
 
 ## Marvel Api 📦
 
-![Open API](􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕􏰓􏰃􏰃􏰔􏰂􏰑􏰕􏰕􏰆􏰁􏰖􏰁􏰗􏰋􏰔􏰁􏰇􏰘􏰌􏰅􏰇􏰖􏰁􏰗􏰘􏰙􏰋􏰌􏰕https://developer.marvel.com) that provides information about Marvel Comics heroes.
+Open API that provides information about [Marvel Comics heroes](https://developer.marvel.com).
 
 ## Contributing 🤝
 

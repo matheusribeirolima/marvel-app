@@ -27,4 +27,4 @@ jobs:
       - name: Applyng Api key
         run: ./config/createKey.sh ${{ secrets.API_KEY }}
       - name: Run checks
-        run: bash ./gradlew project_check
+        run: sudo bash ./gradlew project_check
