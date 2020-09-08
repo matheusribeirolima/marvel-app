@@ -10,7 +10,7 @@ A simple Android project that lists and details Marvel characters.
 
 ## How to use 👣
 
-Just add to the `API_KEY` attribute in the `key.properties` file your **Marvel API** public key, and you're good to go!
+Just add to the `PRIVATE_KEY` and `PUBLIC_KEY` attributes in the `keys.properties` file your **Marvel API** private and public keys, and you're good to go!
 
 ## Features 🎨
 

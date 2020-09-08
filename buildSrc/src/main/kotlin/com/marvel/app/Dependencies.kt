@@ -6,7 +6,12 @@ object Dependencies {
     }
 
     object Modules {
-        const val dependencies = ":dependencies"
+        const val app = ":app"
+        const val core = ":libraries:core"
+        const val navigation = ":libraries:navigation"
+        const val network = ":libraries:network"
+        const val home = ":features:home"
+        const val detail = ":features:detail"
     }
 
     object Releases {

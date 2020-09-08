@@ -1,3 +1,8 @@
 rootProject.name = "Marvel App"
 
-include ':app'
+include ':app',
+        ':libraries:core',
+        ':libraries:navigation',
+        ':libraries:network',
+        ':features:home',
+        ':features:detail'

@@ -1,0 +1,15 @@
+import com.marvel.app.Dependencies
+
+apply from: "$rootDir/common-kotlin-module.gradle"
+
+dependencies {
+    implementation Dependencies.GeneralLibraries.kotlin
+
+    implementation Dependencies.GeneralLibraries.retrofit
+    implementation Dependencies.GeneralLibraries.retrofitGson
+    implementation Dependencies.GeneralLibraries.loggingInterceptor
+
+    testImplementation Dependencies.TestLibraries.junit
+    testImplementation Dependencies.TestLibraries.mockk
+    testImplementation Dependencies.GeneralLibraries.loggingInterceptor
+}

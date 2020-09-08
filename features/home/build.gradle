@@ -1,0 +1,18 @@
+import com.marvel.app.Dependencies
+
+apply plugin: 'com.android.library'
+apply from: "$rootDir/common-android-module.gradle"
+
+dependencies {
+    implementation project(Dependencies.Modules.core)
+    implementation project(Dependencies.Modules.navigation)
+    implementation project(Dependencies.Modules.network)
+
+    implementation Dependencies.GeneralLibraries.kotlin
+    implementation Dependencies.AndroidxLibraries.core
+    implementation Dependencies.AndroidxLibraries.appCompat
+
+    testImplementation Dependencies.TestLibraries.junit
+    androidTestImplementation Dependencies.TestLibraries.testExt
+    androidTestImplementation Dependencies.TestLibraries.espresso
+}

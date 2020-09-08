@@ -25,9 +25,9 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.gradle-cache-key }}-${{ hashFiles('android/buildSrc/**') }}
           restore-keys: ${{ runner.os }}-build-${{ env.gradle-cache-key }}
       - name: Grant execute permission
-        run: chmod +x ./config/createKey.sh
-      - name: Applyng api key
-        run: ./config/createKey.sh ${{ secrets.API_KEY }}
+        run: chmod +x ./config/createKeys.sh
+      - name: Applyng api keys
+        run: ./config/createKeys.sh ${{ secrets.PRIVATE_KEY }} ${{ secrets.PUBLIC_KEY }}
       - name: Run clean generated files
         run: ./gradlew clean
       - name: Run static validation
