@@ -3,6 +3,10 @@ package com.marvel.network.base
 import java.math.BigInteger
 import java.security.MessageDigest
 
+private const val SIG_NUM = 1
+private const val RADIX = 16
+private const val LENGTH = 32
+
 class Auth(
     val timeStamp: String,
     val publicKey: String,
@@ -13,8 +17,8 @@ class Auth(
     fun generateMd5Hash(): String {
         val input = timeStamp + privateKey + publicKey
         return BigInteger(
-            1,
+            SIG_NUM,
             messageDigest.digest(input.toByteArray())
-        ).toString(16).padStart(32, '0')
+        ).toString(RADIX).padStart(LENGTH, '0')
     }
 }
