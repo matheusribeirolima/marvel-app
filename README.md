@@ -12,9 +12,20 @@ A simple Android project that lists and details Marvel characters.
 
 Just add to the `PRIVATE_KEY` and `PUBLIC_KEY` attributes in the `keys.properties` file your **Marvel API** private and public keys, and you're good to go!
 
+## Work in progress 🚧
+
+As this project is being developed in spare time, I cannot to reserve a time every day for its construction. So, no screen is made, but the following features are ready:
+
+- All dependencies inserted with Gradle Kotlin DSL;
+- Project organized in modules by features;
+- API integration with polymorphic deserialization;
+- Unit tests for library modules already implemented;
+- CI with Github Actions running simple gradle tasks for testing and analyzing the code;
+- Static code analysis.
+
 ## Features 🎨
 
-- Paginated listing of the characters' name and image.
+- Paginated listing of the character's name and image.
 - Display of the description and most expensive HQ of the character that the user selects.
 
 ## Tools 🔨
