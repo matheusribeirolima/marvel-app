@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import com.marvel.app.navigation.Actions.openDetailIntent
 import com.marvel.app.navigation.Actions.openHomeIntent
-import com.marvel.navigation.R
 import io.mockk.*
 import org.junit.After
 import org.junit.Assert.assertEquals
