@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.marvel.home">
+    package="com.marvel.app.home">
 
     <application>
         <activity
-            android:name=".HomeActivity"
+            android:name=".presentation.HomeActivity"
             android:noHistory="true"
             android:screenOrientation="portrait">
             <intent-filter>

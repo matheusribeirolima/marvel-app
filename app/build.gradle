@@ -30,6 +30,12 @@ kapt {
 }
 
 dependencies {
+    implementation project(Dependencies.Modules.core)
+    implementation project(Dependencies.Modules.navigation)
+    implementation project(Dependencies.Modules.network)
+    implementation project(Dependencies.Modules.detail)
+    implementation project(Dependencies.Modules.home)
+
     implementation Dependencies.AndroidxLibraries.core
     implementation Dependencies.AndroidxLibraries.appCompat
     implementation Dependencies.AndroidxLibraries.constraintLayout

@@ -2,11 +2,16 @@ import com.marvel.app.Dependencies
 
 apply plugin: 'com.android.library'
 apply from: "$rootDir/common-android-module.gradle"
+apply plugin: 'kotlin-kapt'
 
 dependencies {
-    implementation Dependencies.GeneralLibraries.kotlin
-    implementation Dependencies.AndroidxLibraries.core
-    implementation Dependencies.AndroidxLibraries.appCompat
+    api Dependencies.AndroidxLibraries.core
+    api Dependencies.AndroidxLibraries.fragment
+    api Dependencies.AndroidxLibraries.appCompat
+    api Dependencies.AndroidxLibraries.lifecycle
+    api Dependencies.AndroidxLibraries.scope
+
+    api Dependencies.GeneralLibraries.kotlin
 
     testImplementation Dependencies.TestLibraries.junit
     testImplementation Dependencies.TestLibraries.mockk

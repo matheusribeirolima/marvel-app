@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".DetailActivity"
+            android:name="com.marvel.app.detail.DetailActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="open.marvel.detail" />

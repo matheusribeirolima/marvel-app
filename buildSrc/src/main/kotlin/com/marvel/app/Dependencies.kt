@@ -28,6 +28,7 @@ object Dependencies {
         const val kotlin = "1.4.0"
         const val hilt = "2.28.3-alpha"
         const val core = "1.3.1"
+        const val fragment = "1.2.5"
         const val appCompat = "1.2.0"
         const val constraintLayout = "2.0.1"
         const val recyclerView = "1.1.0"
@@ -36,6 +37,8 @@ object Dependencies {
         const val hiltX = "1.0.0-alpha02"
         const val coroutines = "1.3.9"
         const val navigation = "2.3.0"
+        const val versions = "0.30.0"
+        const val detekt = "1.12.0"
         const val material = "1.2.1"
         const val paging = "3.0.0-alpha06"
         const val coil = "0.13.0"
@@ -53,6 +56,8 @@ object Dependencies {
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
         const val hilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
         const val navigation = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
+        const val versions = "com.github.ben-manes.versions"
+        const val detekt = "io.gitlab.arturbosch.detekt"
     }
 
     object GeneralLibraries {
@@ -73,13 +78,17 @@ object Dependencies {
 
     object AndroidxLibraries {
         const val core = "androidx.core:core-ktx:${Versions.core}"
+        const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment}"
         const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
         const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
+        const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+        const val scope = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
         const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
         const val hiltX = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltX}"
         const val hiltXCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltX}"
+        const val navigationRuntime = "androidx.navigation:navigation-runtime-ktx:${Versions.navigation}"
         const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
         const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
         const val paging = "androidx.paging:paging-runtime:${Versions.paging}"

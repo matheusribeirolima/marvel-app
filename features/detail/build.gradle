@@ -2,13 +2,21 @@ import com.marvel.app.Dependencies
 
 apply plugin: 'com.android.library'
 apply from: "$rootDir/common-android-module.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
 
 dependencies {
-    implementation Dependencies.GeneralLibraries.kotlin
-    implementation Dependencies.AndroidxLibraries.core
-    implementation Dependencies.AndroidxLibraries.appCompat
+    implementation project(Dependencies.Modules.core)
+    implementation project(Dependencies.Modules.network)
+
+    implementation Dependencies.AndroidxLibraries.hiltX
+    kapt Dependencies.AndroidxLibraries.hiltXCompiler
+
+    implementation Dependencies.GoogleLibraries.hilt
+    kapt Dependencies.GoogleLibraries.hiltCompiler
 
     testImplementation Dependencies.TestLibraries.junit
+    testImplementation Dependencies.TestLibraries.mockk
     androidTestImplementation Dependencies.TestLibraries.testExt
     androidTestImplementation Dependencies.TestLibraries.espresso
 }
